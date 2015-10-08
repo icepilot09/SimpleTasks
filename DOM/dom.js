@@ -8,12 +8,12 @@ function submitFunction() {
 	alert(x);
 };
 	
-function changeBackground() {
-	document.getElementById('Div_1').style.background = 'blue';
+function changeColor() {
+	document.getElementById('Div_color').style.background = 'blue';
 };
 
 function changeBack() {
-	document.getElementById('Div_1').style.background = 'red';
+	document.getElementById('Div_color').style.background = 'red';
 };
 
 function changeTextColor(){
@@ -31,6 +31,10 @@ var empty = document.getElementById('empty');
 empty.appendChild(span);
 
 
+var li = document.createElement(li);
+li.innerHTML = [0,1,2,3,4];
+var array = document.getElementById('arrayul');
+array.appendChild(li);
 
 
 
