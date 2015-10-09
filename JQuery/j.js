@@ -24,12 +24,23 @@ $(document).ready(function () {
 			'color', 'rgb(' + (Math.floor(Math.random() * 256)) + ',' +
 			(Math.floor(Math.random() * 256)) + ',' +
 			(Math.floor(Math.random() * 256)) + ')'
-		, 500);
+			, 500);
 	});
-	
-	$("#emptyjq").append("<span>Michael</span>")
-	
-	
+
+	$("#emptyjq").append("<span>Michael</span>");
+
+
+	var items = new Array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10');
+	var ul;
+	$.each(items, function (index, value) {
+		{
+			$('.arrayjq').append(ul);
+			ul = $('<ul>', { 'class': 'test' });
+		}
+		var li = $('<li>').append(value);
+		ul.append(li);
+	});
+	$('.arrayjq').append(ul);
 });
 
 
