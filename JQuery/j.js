@@ -27,8 +27,8 @@ $(document).ready(function () {
 		, 500);
 	});
 	
-	var span = $('<span />').html('Michael');
-	$('#emptyjq').html(span);
+	$("#emptyjq").append("<span>Michael</span>")
+	
 	
 });
 
