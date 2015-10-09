@@ -31,10 +31,21 @@ var empty = document.getElementById('empty');
 empty.appendChild(span);
 
 
-var li = document.createElement(li);
-li.innerHTML = [0,1,2,3,4];
-var array = document.getElementById('arrayul');
-array.appendChild(li);
+var options = [
+	 ['Option 1', 'Option 2'],
+];
+function makeLI(array){
+	var list = document.getElementById('arrayul')
+	for (var i = 0; i < array.length; i++) {
+		var item = document.createElement('li');
+		item.appendChild(document.createTextNode(array[i]));
+		list.appendChild(item);
+		
+	}
+	return list;
+	
+}
+document.getElementById('arrayul').appendChild(makeLI(options[0]));
 
 
 
