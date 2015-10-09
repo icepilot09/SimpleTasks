@@ -26,8 +26,10 @@ $(document).ready(function () {
 			(Math.floor(Math.random() * 256)) + ')'
 		, 500);
 	});
-
-
+	
+	var span = $('<span />').html('Michael');
+	$('#emptyjq').html(span);
+	
 });
 
 
